@@ -7,3 +7,11 @@
 @import 'layout/footer';
 @import 'pages/index';
  */
+ 
+ @import 'core/variables';
+ @import 'core/reset';
+ @import 'layout/hero';
+
+ :root {
+    font-family:$font-family;
+ }

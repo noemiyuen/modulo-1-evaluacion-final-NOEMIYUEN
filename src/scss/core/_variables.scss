@@ -1,0 +1,13 @@
+$colorBotonIcon:#f26002;
+$colorWhite: #ffffff;
+$colorReasons:#8ccbea;
+$colorMenuIcon:#0271bc;
+$colorFooterBackground:#304268;
+
+
+$defaultFontSize:16px;
+@function rem($pixels) {
+    @return ($pixels/$defaultFontSize*1rem);
+}
+$font-family: 'Roboto', sans-serif;
+$font-family-titles: 'Roboto Slab', serif;

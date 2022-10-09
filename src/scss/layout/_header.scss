@@ -1,0 +1,52 @@
+.hero {
+   
+
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding:0px 3px 10px;
+    justify-content: end;
+    /*color | image | repeat | attachment | position x y*/
+    background: url(../images/cover.jpeg) no-repeat center;
+    background-size: cover;
+    color:$colorWhite;
+
+    &__link--buttonMenu {
+        background: $colorMenuIcon url(../images/ico-menu.svg) no-repeat center center;
+        background-size: 13.5px auto; /*width heigh*/
+        border: none;
+        height:44px;
+        width: 37.1px;
+        position:fixed;
+        left:0;
+        top:-21px;
+    }
+   /* &__buttonMenu {
+        background-color: red;
+        border: none;
+        height:22px;
+        width: 37.1px;
+        position:fixed;
+        left:0;
+        top:0;
+        object-position: center;
+        
+
+    } */
+}
+.hero__buttonMenu--link {
+
+}
+.menu-icon {
+   /*  background-color: $colorMenuIcon; */
+/*     object-fit: cover;*/
+   /*  object-position: center;
+    position: relative;
+    width:36px; */
+/*     top:-25%;
+    left:-30%; */
+   /*  padding:0 11.25px 10px;
+ */
+  
+}
