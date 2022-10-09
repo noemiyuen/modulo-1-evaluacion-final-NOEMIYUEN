@@ -2,7 +2,7 @@
     background-color:$colorWhite;
     padding: 61.9px 15px 45px;
 &__title3 {
-    color:$colorReasons;
+    color:$colorInsomnia;
     text-transform: capitalize;
     font-size: rem(14);
     line-height: rem(30);
@@ -13,7 +13,6 @@
     display:flex;
     flex-direction: column;
     gap:20px;
-    background: red;;
     &--title2 {
         font-size: rem(24);
         line-height: rem(30);

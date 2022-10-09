@@ -1,0 +1,48 @@
+.reasons {
+    background-color: $colorReasons;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:auto auto auto auto auto;
+    padding: 29px 15px 60px;
+    row-gap: 44px;
+    justify-items: center;
+    &__title {
+        font-family: $font-family-titles;
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: rem(24);
+        line-height: rem(30);
+        margin-bottom: 9px;
+        } 
+    &__article {
+        text-align: center;
+        margin:0 55px;
+        &--title {
+            font-family: $font-family-titles;
+            font-weight: 700;
+            font-size: rem(18);
+            line-height: rem(30);
+            }
+        &--text {
+            font-size: rem(18);
+            line-height: rem(30);
+            }
+        }
+    &__button {
+        background-color: $colorBotonIcon;
+        border: none;
+        border-radius: 22.5px;
+        height: 45px;
+        width: 184px;
+        margin-top: -3px;
+        &--link {
+            text-decoration: none;
+            color:$colorWhite;
+            font-size: rem(20);
+            line-height: rem(40);
+            padding:10px 20px;
+        }
+    }
+
+}
+ 
