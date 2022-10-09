@@ -1,4 +1,41 @@
 .footer {
     background-color: $colorFooterBackground;
     color:$colorWhite;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    padding: 0px 15px 36px;
+    &__buttonArrow {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        border-color: transparent;
+        transform: translate(0, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--link {
+        padding:10px;
+        }
+    }
+    &__nav {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__container {
+        text-align: center;
+        font-size: rem(14);
+        line-height: rem(30);
+    }
+}
+.list__element--link {
+    text-decoration: none;
+    color:$colorWhite;
+    font-size: rem(16);
+    line-height: rem(30);
+}
+.fa-heart {
+    color:$colorBotonIcon;
 }
