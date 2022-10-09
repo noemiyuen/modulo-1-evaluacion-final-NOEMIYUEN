@@ -1,6 +1,4 @@
 .hero {
-   
-
     height:100vh;
     display:flex;
     flex-direction: column;
@@ -11,42 +9,41 @@
     background: url(../images/cover.jpeg) no-repeat center;
     background-size: cover;
     color:$colorWhite;
+    gap:20px;
 
-    &__link--buttonMenu {
-        background: $colorMenuIcon url(../images/ico-menu.svg) no-repeat center center;
+    &__buttonMenu {
+        background: $colorMenuIcon url(../images/ico-menu.svg) no-repeat 50% 60%;
         background-size: 13.5px auto; /*width heigh*/
         border: none;
         height:44px;
         width: 37.1px;
         position:fixed;
         left:0;
-        top:-21px;
+        top:-22px;
     }
-   /* &__buttonMenu {
-        background-color: red;
-        border: none;
-        height:22px;
-        width: 37.1px;
-        position:fixed;
-        left:0;
-        top:0;
-        object-position: center;
-        
+    &__title {
+        font-family: $font-family-titles;
+        font-weight: 700;
+        font-size: rem(42);
+        word-spacing: 100vh;
+        text-align: center;
+        line-height: rem(55);
+        text-transform: uppercase;
+    }
+    &__text {
+        font-size: rem(16);
+        line-height: rem(19);
 
-    } */
-}
-.hero__buttonMenu--link {
+    }
+   &__buttonArrow {
+    background: $colorWhite url(../images/ico-scroll-down.svg) no-repeat center center;
+    background-color: white;
+    height:37px;
+    width: 37.9px;
+    border-color: transparent;
+    border-radius: 50%;
+    margin:15.2px 0 24.1px;
+   }
+    } 
 
-}
-.menu-icon {
-   /*  background-color: $colorMenuIcon; */
-/*     object-fit: cover;*/
-   /*  object-position: center;
-    position: relative;
-    width:36px; */
-/*     top:-25%;
-    left:-30%; */
-   /*  padding:0 11.25px 10px;
- */
-  
-}
+

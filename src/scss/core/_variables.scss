@@ -5,7 +5,7 @@ $colorMenuIcon:#0271bc;
 $colorFooterBackground:#304268;
 
 
-$defaultFontSize:16px;
+$defaultFontSize:16;
 @function rem($pixels) {
     @return ($pixels/$defaultFontSize*1rem);
 }
