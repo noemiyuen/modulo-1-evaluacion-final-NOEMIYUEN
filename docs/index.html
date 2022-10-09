@@ -3,66 +3,221 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Evaluación Final Noemí Yuen</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <!--  <link rel="icon" href="./assets/images/favicon.png" /> -->
   </head>
 
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <main>
+      <section class="hero" id="hero">
+        <button class="hero__buttonMenu" title="menu">
+          <a
+            class="hero__buttonMenu--link"
+            href="https://adalab.es/."
+            title="To Adalab"
+            target="_blank"
+          >
+            <img
+              class="menuImg"
+              src="./assets/images/ico-menu.svg"
+              title="menu"
+              alt="menu icon"
+            />
+          </a>
+        </button>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
+        <!--   <a
+        class="Menu-link"
+        href="https://adalab.es/."
+        title="To Adalab"
+        target="_blank"
+      >
+        <button class="hero__buttonMenu" title="menu" alt="menu icon"></button>
+      </a> -->
+        <h1 class="hero__title">Anonymous Proxy</h1>
+        <p class="hero__text">In hac habitase platea dictumst.</p>
+
+        <button class="hero__buttonScroll" title="To Reasons">
+          <a
+            class="hero__buttonScroll--link"
+            href="./index.html#reasons"
+            title="To Reasons"
+          >
+            <img
+              class="scrollImg"
+              src="./assets/images/ico-scroll-down.svg"
+              title="To Reasons"
+              alt="scroll-down icon"
+          /></a>
+        </button>
+      </section>
+
+      <section class="aside">
+        <h3 class="aside__title3">Insomnia tips</h3>
+
+        <article class="aside__article">
+          <h2 class="aside__article--title2">Looking through a widow</h2>
+          <p class="aside__article--text">
+            Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
+            luctus ex diam nec lectus. Vivamus semper sodales rutrum.
+          </p>
+        </article>
+
+        <button class="aside__button" title="To Adalab">
+          <a class="aside__button--link" href="#" title="To article">go</a>
+        </button>
+      </section>
+
+      <section class="reasons" id="reasons">
+        <h2 class="reasons__title">3 reasons to purchase</h2>
+        <article class="reasons__article">
+          <h3 class="reasons__article--title">Ud sed metus</h3>
+          <p class="reasons__article--text">Lorem ipsum dolor sit amet, consecteur.</p>
+        </article>
+
+        <article class="reasons__article">
+          <h3 class="reasons__article--title">Curabitur ac erat</h3>
+          <p class="reasons__article--text">Mauris mattis urna quis lorem molestie.</p>
+        </article>
+
+        <article class="reasons__article">
+          <h3 class="reasons__article--title">Morbi dictum</h3>
+          <p class="reasons__article--text">Aliquam in dolor et dolor tincidunt.</p>
+        </article>
+
+        <button class="reasons__button" title="To top">
+          <a class="reasons__button--link" href="./index.html#hero" title="To top"
+            >More reasons</a
+          >
+        </button>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <button class="footer__buttonArrow" title="To top">
+        <a
+          class="footer__buttonArrow--link"
+          href="./index.html#hero"
+          title="To top"
+        >
+          <img
+            class="arrowImg"
+            src="./assets/images/ico-arrow.svg"
+            title="arrow to top"
+            alt="arrow icon"
+          />
+        </a>
+      </button>
+
+      <nav class="footer__nav">
+        <ul class="list more-menu">
+          <li class="list__element">
+            <a
+              class="list__element--link"
+              href="https://adalab.es/"
+              title="To Adalab temporarily link"
+              target="_blank"
+              >articles</a
+            >
           </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
+
+          <li class="list__element">
+            <a
+              class="list__element--link"
+              href="https://adalab.es/"
+              title="To Adalab temporarily link"
+              target="_blank"
+              >books</a
+            >
           </li>
+
+          <li class="list__element">
+            <a
+              class="list__element--link"
+              href="https://adalab.es/"
+              title="To Adalab temporarily link"
+              target="_blank"
+              >events</a
+            >
+          </li>
+
+          <li class="list__element">
+            <a
+              class="list__element--link"
+              href="https://adalab.es/"
+              title="To Adalab temporarily link"
+              target="_blank"
+              >reasons</a
+            >
+          </li>
+
+          <li class="list__element">
+            <a
+              class="list__element--link"
+              href="https://adalab.es/"
+              title="To Adalab temporarily link"
+              target="_blank"
+              >tips</a
+            >
+          </li>
+
         </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
+      </nav>
+      <nav class="footer__nav">
+        <ul class="list social-menu">
+          <li class="list__element">
+            <a
+              class="list__element--link"
+              href="https://adalab.es/"
+              title="To Adalab temporarily link"
+              target="_blank"
+              >Twitter</a
+            >
+          </li>
+
+          <li class="list__element">
+            <a
+              class="list__element--link"
+              href="https://adalab.es/"
+              title="To Adalab temporarily link"
+              target="_blank"
+              >Instagram</a
+            >
+          </li>
+
+          <li class="list__element">
+            <a
+              class="list__element--link"
+              href="https://adalab.es/"
+              title="To Adalab temporarily link"
+              target="_blank"
+              >Mastodon.Social</a
+            >
+          </li>
+
+        </ul>
+      </nav>
+      <div class="footer__container">
+        <p clas="footer__container--copy">&copy;2022</p>
+        <p class="footer__container--love">
+          we <i class="fa-solid fa-heart"></i> components
         </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      </div>
+    </footer>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
-
-          </li>
-        </ul>
-      </main>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
-      </footer>
-
-    </div>
-    <script src="./assets/js/main.js"></script>
   </body>
 </html>

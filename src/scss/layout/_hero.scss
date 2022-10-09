@@ -12,14 +12,20 @@
     gap:20px;
 
     &__buttonMenu {
-        background: $colorMenuIcon url(../images/ico-menu.svg) no-repeat 50% 60%;
-        background-size: 13.5px auto; /*width heigh*/
+        background-color:$colorMenuIcon;
+        display:flex ;
+        align-items: center;
+        justify-content: center;
         border: none;
         height:44px;
         width: 37.1px;
         position:fixed;
         left:0;
         top:-22px;
+        &--link {
+            padding:10px;
+            transform: translate(0, 17%);
+        }
     }
     &__title {
         font-family: $font-family-titles;
@@ -35,15 +41,23 @@
         line-height: rem(19);
 
     }
-   &__buttonArrow {
-    background: $colorWhite url(../images/ico-scroll-down.svg) no-repeat center center;
-    background-color: white;
+   &__buttonScroll {
+    background-color:$colorWhite;
     height:37px;
     width: 37.9px;
     border-color: transparent;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin:15.2px 0 24.1px;
+    &--link {
+        padding:10px;
+    }
    }
     } 
 
-
+.scrollImg {
+    width: 16.8px;
+    height: 9.6px;
+}
