@@ -1,6 +1,12 @@
 .aside {
     background-color:$colorWhite;
     padding: 61.9px 15px 45px;
+    @media all and (min-width:768px){
+        padding:37px 39px 60px;
+        }
+    @media all and (min-width:1200px){
+        padding:65px 275px 60px;
+        }
 &__title3 {
     color:$colorInsomnia;
     text-transform: capitalize;
@@ -8,22 +14,43 @@
     line-height: rem(30);
     text-transform: capitalize;
     vertical-align: text-top;
-}
+    @media all and (min-width:1200px){
+        font-size: rem(16);
+        }
+    }
 &__article {
     display:flex;
     flex-direction: column;
     gap:20px;
+    @media all and (min-width:768px){
+        gap:27px;
+        }
+    @media all and (min-width:1200px){
+        gap:32px;
+        }
     &--title2 {
         font-size: rem(24);
         line-height: rem(30);
         font-family: $font-family-titles;
         font-weight: 700;
         text-transform: capitalize;
+        max-width: 20ch;
+        @media all and (min-width:768px){
+            max-width: 100%;
+            font-size: rem(26);
+            line-height: rem(45);
+            }
+        @media all and (min-width:1200px){
+            font-size: rem(32);
+            }
         }
     &--text {
-    color:#4a4a4a;
-    font-size: rem(18);
-    line-height: rem(30);
+        color:#4a4a4a;
+        font-size: rem(18);
+        line-height: rem(30);
+        @media all and (min-width:768px){
+            font-size: rem(20);
+            }
         }
     } 
 &__button {
@@ -37,6 +64,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media all and (min-width:768px){
+        width:91px;
+        margin-top: 27px;
+        }
+    @media all and (min-width:1200px){
+        width:160px;
+        }
     &--link {
         color:$colorBotonIcon;
         font-weight: 500;
@@ -44,9 +78,12 @@
         text-transform: capitalize;
         font-size: rem(20);
         padding: 10px 25px;
-       
-
-
-    }
-}  
+        @media all and (min-width:768px){
+            padding: 10px 30px;
+            }
+        @media all and (min-width:1200px){
+            padding: 10px 60px;
+            }
+        }
+    }  
 }

@@ -3,14 +3,18 @@
     display:flex;
     flex-direction: column;
     align-items:center;
-    padding:0px 3px 10px;
+    padding:3px 3px 34.1px;
     justify-content: flex-end;
     /*color | image | repeat | attachment | position x y*/
     background: url(../images/cover.jpeg) no-repeat center;
     background-size: cover;
     color:$colorWhite;
-    gap:20px;
-
+    @media all and (min-width:768px){
+        padding:3px 3px 45px;
+        }
+    @media all and (min-width:1200px){
+        padding:3px 3px 13px;
+        }
     &__buttonMenu {
         background-color:$colorMenuIcon;
         display:flex ;
@@ -22,9 +26,19 @@
         position:fixed;
         left:0;
         top:-22px;
+        @media all and (min-width:768px){
+            top:0;
+            width: 41.6px;
+        }
+        @media all and (min-width:1200px){
+            width: 44px;
+        }
         &--link {
-            padding:10px;
-            transform: translate(0, 17%);
+            padding:8px;
+            transform: translate(0, 15%);
+            @media all and (min-width:768px){
+                transform: translate(0, 0);
+            }
         }
     }
     &__title {
@@ -35,10 +49,36 @@
         text-align: center;
         line-height: rem(55);
         text-transform: uppercase;
+        /*text-shadow : pxX pxY  blur color/opacidad20% */
+        text-shadow:0 2px 3px rgba(0, 0, 0, 0.2);
+        margin-bottom: 5.9px;
+        @media all and (min-width:768px){
+            font-size: rem(80);
+            line-height: rem(106);
+            }
+        @media all and (min-width:1200px){
+            font-size: rem(100);
+            line-height: rem(132);
+            margin-bottom: 0px;
+            }
     }
     &__text {
         font-size: rem(16);
         line-height: rem(19);
+        margin-bottom: 35.2px;
+        @media all and (min-width:768px){
+            font-size: rem(24);
+            line-height: rem(28);
+            max-width: 22ch;
+            text-align: center;
+            margin-bottom: 6px;
+            }
+        @media all and (min-width:1200px){
+            font-size: rem(24);
+            line-height: rem(28);
+            margin-bottom: 34px;
+            max-width: 100%;
+            }
 
     }
    &__buttonScroll {
@@ -50,14 +90,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:15.2px 0 24.1px;
+    @media all and (min-width:768px){
+        height:45px;
+        width: 42.5px;
+        }
     &--link {
         padding:10px;
-    }
-   }
+            @media all and (min-width:768px){
+                padding:20px;
+                }
+            }
     } 
-
+}
+/*ICON IMAGES*/
+.menuImg {
+    width:13.5px ;
+    @media all and (min-width:768px){
+        height: 14px;
+        width: 15.1px;
+    }
+    @media all and (min-width:1200px){
+        width: 16px;
+    }
+}
 .scrollImg {
-    width: 16.8px;
     height: 9.6px;
+    width: 16.8px;
+    @media all and (min-width:768px){
+        height: 11.7px;
+        width: 18.9px;
+    }
 }
