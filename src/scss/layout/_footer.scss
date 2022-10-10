@@ -1,41 +1,72 @@
 .footer {
     background-color: $colorFooterBackground;
     color:$colorWhite;
+    padding: 65px 15px 36px;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:30px;
-    padding: 0px 15px 36px;
+    position: relative;
+    @media all and (min-width:768px){
+        padding: 50px 39px 40px;
+        }
     &__buttonArrow {
         height: 45px;
         width: 45px;
         border-radius: 50%;
         border-color: transparent;
-        transform: translate(0, -50%);
+        position:absolute;
+        z-index: 1;
+        top:-5%;
         display: flex;
         justify-content: center;
         align-items: center;
         &--link {
-        padding:10px;
+            padding:10px;
+            }
+        }
+    &__wrap {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:30px;
+        width: 100%;
+        @media all and (min-width:768px){
+            flex-direction: row;  
+            justify-content: space-between;
+            align-items: flex-start;
+            }
+        @media all and (min-width:1200px){
+            justify-content: center;
+            }
+        &--nav {
+            text-transform: uppercase;
+            text-align: center;
+            @media all and (min-width:768px){
+                text-align: left; 
+                padding-right: 45px;
+                }
+            }
+        &--container {
+            margin-top: 2px;
+            text-align: center;
+            font-size: rem(14);
+            line-height: rem(30);
+            @media all and (min-width:768px){
+                order: -1; 
+                text-align: left;
+                padding-right: 30px;
+                }
+            }
         }
     }
-    &__nav {
-        text-transform: uppercase;
-        text-align: center;
-    }
-    &__container {
-        text-align: center;
-        font-size: rem(14);
-        line-height: rem(30);
-    }
-}
 .list__element--link {
     text-decoration: none;
     color:$colorWhite;
     font-size: rem(16);
     line-height: rem(30);
-    padding:10px;
+    padding:5px;
 }
 .arrowImg {
     height:24px;
