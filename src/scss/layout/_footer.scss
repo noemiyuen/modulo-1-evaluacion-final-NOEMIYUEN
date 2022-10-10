@@ -11,8 +11,7 @@
         padding: 50px 39px 40px;
         }
     &__buttonArrow {
-        height: 45px;
-        width: 45px;
+        @include wh (45px,45px);
         border-radius: 50%;
         border-color: transparent;
         position:absolute;
@@ -59,9 +58,7 @@
         &--container {
             margin-top: 2px;
             text-align: center;
-            font-size: rem(14);
-            line-height: rem(30);
-          
+            @include t (rem(14),rem(30));
             @media all and (min-width:768px){
                 order: -1; 
                 text-align: left;
@@ -73,8 +70,7 @@
 .list__element--link {
     text-decoration: none;
     color:$colorWhite;
-    font-size: rem(16);
-    line-height: rem(30);
+    @include t (rem(16),rem(30));
     padding:5px;
     &:hover {
         color:$colorBotonIcon;
@@ -86,6 +82,8 @@
 .fa-heart {
     color:$colorBotonIcon;
     transition: transform 2s;
+    animation:bounce;
+    animation-duration: 1s;
     &:hover {
         color:red;
         transform: rotate(720deg) scale(2);

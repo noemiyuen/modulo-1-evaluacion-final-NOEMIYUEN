@@ -10,12 +10,10 @@
 &__title3 {
     color:$colorInsomnia;
     text-transform: capitalize;
-    font-size: rem(14);
-    line-height: rem(30);
-    text-transform: capitalize;
+    @include t (rem(14),rem(30));
     vertical-align: text-top;
     @media all and (min-width:1200px){
-        font-size: rem(16);
+        @include t (rem(16),rem(30));
         }
     }
 &__article {
@@ -29,16 +27,14 @@
         gap:32px;
         }
     &--title2 {
-        font-size: rem(24);
-        line-height: rem(30);
+        @include t (rem(24),rem(30));
         font-family: $font-family-titles;
         font-weight: 700;
         text-transform: capitalize;
         max-width: 20ch;
         @media all and (min-width:768px){
             max-width: 100%;
-            font-size: rem(26);
-            line-height: rem(45);
+            @include t (rem(26),rem(45));
             }
         @media all and (min-width:1200px){
             font-size: rem(32);
@@ -46,8 +42,7 @@
         }
     &--text {
         color:#4a4a4a;
-        font-size: rem(18);
-        line-height: rem(30);
+        @include t (rem(18),rem(30));
         @media all and (min-width:768px){
             font-size: rem(20);
             }
@@ -59,8 +54,7 @@
     border-radius: 22.5px;
     background-color:$colorWhite;
     margin-top: 26px;
-    height:45px;
-    width:76px;
+    @include wh (76px,45px);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -5,10 +5,21 @@ $colorReasons:#eff9ff;
 $colorMenuIcon:#0271bc;
 $colorFooterBackground:#304268;
 
-
+//Font
 $defaultFontSize:16;
 @function rem($pixels) {
     @return ($pixels/$defaultFontSize*1rem);
 }
 $font-family: 'Roboto', sans-serif;
 $font-family-titles: 'Roboto Slab', serif;
+
+//Mixins
+@mixin t($fontSize,$fontHeight) {
+    font-size: $fontSize;
+    line-height: $fontHeight;
+}
+@mixin wh($width,$height) {
+    width: $width;
+    height: $height;
+}
+

@@ -23,12 +23,10 @@
         font-family: $font-family-titles;
         font-weight: 700;
         text-transform: capitalize;
-        font-size: rem(24);
-        line-height: rem(30);
+        @include t (rem(24),rem(30));
         margin-bottom: 5px;
         @media all and (min-width:768px){
-            font-size: rem(26);
-            line-height: rem(45);
+            @include t (rem(26),rem(45));
             grid-column: span 3;
             }
         @media all and (min-width:1200px){
@@ -44,8 +42,7 @@
         &--title {
             font-family: $font-family-titles;
             font-weight: 700;
-            font-size: rem(18);
-            line-height: rem(30);
+            @include t (rem(18),rem(30));;
             margin-bottom: 1px;
             @media all and (min-width:768px){
                 font-size: rem(24);
@@ -64,8 +61,7 @@
         background-color: $colorBotonIcon;
         border: none;
         border-radius: 22.5px;
-        height: 45px;
-        width: 184px;
+        @include wh (184px,45px);
         margin-top: -3px;
         transition:width 1s, transform 2s;
         &:hover {
@@ -84,8 +80,7 @@
         &--link {
             text-decoration: none;
             color:$colorWhite;
-            font-size: rem(20);
-            line-height: rem(45);
+            @include t (rem(20),rem(45));
             padding:10px 23px;
             @media all and (min-width:768px){
                 padding:10px 35px;
