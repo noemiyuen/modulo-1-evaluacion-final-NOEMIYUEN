@@ -64,6 +64,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: width 2s, transform 1s;
+    transition-timing-function: ease-out;
+    &:hover {
+       background-color:$colorBotonIcon;
+        transform:rotate(-5deg);
+        width:200px;
+        color:$colorWhite;
+    }
     @media all and (min-width:768px){
         width:91px;
         margin-top: 27px;
@@ -78,6 +86,10 @@
         text-transform: capitalize;
         font-size: rem(20);
         padding: 10px 25px;
+        &:hover {
+            color:$colorWhite;
+            font-size: rem(30);
+        }
         @media all and (min-width:768px){
             padding: 10px 30px;
             }

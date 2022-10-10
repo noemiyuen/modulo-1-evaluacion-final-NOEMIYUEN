@@ -21,6 +21,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media all and (min-width:768px){
+            top: -10%;
+            }
         &--link {
             padding:10px;
             }
