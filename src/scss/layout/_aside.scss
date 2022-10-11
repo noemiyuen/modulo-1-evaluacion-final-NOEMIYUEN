@@ -49,12 +49,17 @@
         }
     } 
 &__button {
-    text-transform: capitalize;
+    margin-top: 26px;
+    padding: 5px;
     border: solid 2px $colorBotonIcon;
     border-radius: 22.5px;
-    background-color:$colorWhite;
-    margin-top: 26px;
     @include wh (76px,45px);
+    background-color:$colorWhite;
+    color:$colorBotonIcon;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: rem(20);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,31 +70,15 @@
         transform:rotate(360deg);
         width:200px;
         color:$colorWhite;
-    }
+        font-size: rem(30);
+        }
     @media all and (min-width:768px){
-        width:91px;
+        @include wh (91px,45px);
         margin-top: 27px;
         }
     @media all and (min-width:1200px){
-        width:160px;
+        @include wh (160px,45px);
         }
-    &--link {
-        color:$colorBotonIcon;
-        font-weight: 500;
-        text-decoration: none;
-        text-transform: capitalize;
-        font-size: rem(20);
-        padding: 10px 25px;
-        &:hover {
-            color:$colorWhite;
-            font-size: rem(30);
-        }
-        @media all and (min-width:768px){
-            padding: 10px 30px;
-            }
-        @media all and (min-width:1200px){
-            padding: 10px 60px;
-            }
-        }
+
     }  
 }

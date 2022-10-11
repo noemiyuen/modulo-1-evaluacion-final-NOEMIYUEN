@@ -15,8 +15,8 @@
         column-gap: 27.7px;
         }
     @media all and (min-width:1200px){
-        padding: 61px 81px 60px;
-        row-gap: 38px;
+        padding: 61px 40px 60px;
+        row-gap: 43px;
         column-gap: 26.2px;
         }
     &__title {
@@ -28,6 +28,7 @@
         @media all and (min-width:768px){
             @include t (rem(26),rem(45));
             grid-column: span 3;
+            margin-bottom: 0px;
             }
         @media all and (min-width:1200px){
             font-size: rem(32);
@@ -39,6 +40,9 @@
         @media all and (min-width:768px){
             margin:0;
             }
+        @media all and (min-width:1200px){
+            max-width: 354px;
+                }
         &--title {
             font-family: $font-family-titles;
             font-weight: 700;
@@ -58,37 +62,32 @@
             }
         }
     &__button {
+        margin-top: -3px;
         background-color: $colorBotonIcon;
         border: none;
         border-radius: 22.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @include wh (184px,45px);
-        margin-top: -3px;
+        text-decoration: none;
+        color:$colorWhite;
+        @include t (rem(20),rem(45));   
+        padding:5px;
         transition:width 1s, transform 2s;
         &:hover {
             transform:skewY(-4deg) scale(1.2);
             background-color: $colorFooterBackground;
-         }
+             }
         @media all and (min-width:768px){
-            width: 210px;
+            @include wh (210px,45px);
             grid-column: span 3;
             margin-top: 19px;
             }
         @media all and (min-width:1200px){
-            width: 255px;
+            @include wh (255px,45px);
             margin-top: 14px;
-            }
-        &--link {
-            text-decoration: none;
-            color:$colorWhite;
-            @include t (rem(20),rem(45));
-            padding:10px 23px;
-            @media all and (min-width:768px){
-                padding:10px 35px;
-                }
-            @media all and (min-width:1200px){
-                padding:10px 50px;
-                text-transform: capitalize;
-                }
+            text-transform: capitalize;
         }
     }
 }

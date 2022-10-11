@@ -11,26 +11,27 @@
         padding: 50px 39px 40px;
         }
     &__buttonArrow {
+        background-color: $colorWhite;
         @include wh (45px,45px);
         border-radius: 50%;
-        border-color: transparent;
         position:absolute;
         z-index: 1;
         top:-5%;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding:5px;
         animation:shakeY;
         animation-duration: 1s;
         animation-iteration-count:2;
         &:hover {
             background-color:$colorInsomnia;
-        }
+            }
         @media all and (min-width:768px){
             top: -10%;
             }
-        &--link {
-            padding:10px;
+        &--arrowImg {
+            height:24px;
             }
         }
     &__wrap {
@@ -64,6 +65,7 @@
                 order: -1; 
                 text-align: left;
                 padding-right: 30px;
+                margin-top: 0px;
                 }
             }
         }
@@ -77,9 +79,7 @@
         color:$colorBotonIcon;
     }
 }
-.arrowImg {
-    height:24px;
-}
+
 .fa-heart {
     color:$colorBotonIcon;
     transition: transform 2s;

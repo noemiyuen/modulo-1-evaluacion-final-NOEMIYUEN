@@ -1,14 +1,14 @@
 .hero {
     height:100vh;
+    padding:3px 3px 34.1px;
+    /*color | image | repeat | attachment | position x y*/
+    background: url(../images/cover-tiny.jpeg) no-repeat center;
+    background-size: cover;
+    color:$colorWhite;
     display:flex;
     flex-direction: column;
     align-items:center;
-    padding:3px 3px 34.1px;
     justify-content: flex-end;
-    /*color | image | repeat | attachment | position x y*/
-    background: url(../images/cover.jpeg) no-repeat center;
-    background-size: cover;
-    color:$colorWhite;
     @media all and (min-width:768px){
         padding:3px 3px 45px;
         }
@@ -20,27 +20,31 @@
         display:flex ;
         align-items: center;
         justify-content: center;
-        border: none;
-        &:hover {
-            transform: scale(1.2);
-            border:solid 3px #01335467;
-        }
         @include wh (37.1px,44px);
         position:fixed;
         left:0;
         top:-22px;
+        padding:5px;
+        &:hover {
+            transform: scale(1.2);
+            border:solid 3px #01335467;
+            }
         @media all and (min-width:768px){
             top:0;
             width: 41.6px;
-        }
+            }
         @media all and (min-width:1200px){
             width: 44px;
-        }
-        &--link {
-            padding:8px;
-            transform: translate(0, 15%);
+            }
+        &--menuImg {
+            transform: translate(0, 30%);
+            width:13.5px ;
             @media all and (min-width:768px){
+                @include wh (15.1px,14px);
                 transform: translate(0, 0);
+            }
+            @media all and (min-width:1200px){
+                width: 16px;
             }
         }
     }
@@ -56,6 +60,7 @@
         margin-bottom: 5.9px;
         @media all and (min-width:768px){
             @include t (rem(80),rem(106));
+            margin-bottom: 20px;
             }
         @media all and (min-width:1200px){
             @include t (rem(100),rem(132));
@@ -75,7 +80,6 @@
             margin-bottom: 34px;
             max-width: 100%;
             }
-
     }
    &__buttonScroll {
     background-color:$colorWhite;
@@ -88,33 +92,24 @@
     animation-name: colorRange;
     animation-duration: 3s;
     animation-iteration-count: 1;
+    padding:5px;
     &:hover {
         background-color:$colorFooterBackground;
-    }
+        }
     @media all and (min-width:768px){
         @include wh (42.5px,45px);
         }
-    &--link {
-        padding:10px;
-            @media all and (min-width:768px){
-                padding:20px;
-                }
-            }
-    } 
-}
-/*ICON IMAGES*/
-.menuImg {
-    width:13.5px ;
-    @media all and (min-width:768px){
-        @include wh (15.1px,14px);
-    }
     @media all and (min-width:1200px){
-        width: 16px;
-    }
-}
-.scrollImg {
-    @include wh (16.8px,9.6px);
-    @media all and (min-width:768px){
-        @include wh (18.9px,11.7px);
+        @include wh (45px,45px);
+        }
+    &--scrollImg {
+        @include wh (16.8px,9.6px);
+        @media all and (min-width:768px){
+            @include wh (18.9px,11.7px);
+            }
+        @media all and (min-width:1200px){
+            @include wh (20px,11.7px);
+            }
+        }
     }
 }
