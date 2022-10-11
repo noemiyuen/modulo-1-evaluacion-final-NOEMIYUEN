@@ -58,11 +58,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: width 2s, transform 2s;
+    transition: width 2s, transform 1s;
     transition-timing-function: ease-out;
     &:hover {
        background-color:$colorBotonIcon;
-        transform:rotate(720deg);
+        transform:rotate(360deg);
         width:200px;
         color:$colorWhite;
     }

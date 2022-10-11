@@ -22,6 +22,7 @@
         align-items: center;
         animation:shakeY;
         animation-duration: 1s;
+        animation-iteration-count:2;
         &:hover {
             background-color:$colorInsomnia;
         }
@@ -83,7 +84,7 @@
     color:$colorBotonIcon;
     transition: transform 2s;
     animation:bounce;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     &:hover {
         color:red;
         transform: rotate(720deg) scale(2);

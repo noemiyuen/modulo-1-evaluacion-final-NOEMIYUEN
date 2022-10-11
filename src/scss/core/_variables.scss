@@ -23,3 +23,11 @@ $font-family-titles: 'Roboto Slab', serif;
     height: $height;
 }
 
+  @keyframes colorRange {
+  0%   {background-color:$colorWhite}
+  20%   {background-color:$colorInsomnia;}
+  40%  {background-color:$colorMenuIcon;}
+  60%  {background-color:$colorFooterBackground;}
+  80%  {background-color:$colorMenuIcon;}
+  100% {background-color:$colorInsomnia;}
+}

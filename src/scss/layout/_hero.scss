@@ -21,6 +21,10 @@
         align-items: center;
         justify-content: center;
         border: none;
+        &:hover {
+            transform: scale(1.2);
+            border:solid 3px #01335467;
+        }
         @include wh (37.1px,44px);
         position:fixed;
         left:0;
@@ -81,6 +85,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-name: colorRange;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    &:hover {
+        background-color:$colorFooterBackground;
+    }
     @media all and (min-width:768px){
         @include wh (42.5px,45px);
         }
