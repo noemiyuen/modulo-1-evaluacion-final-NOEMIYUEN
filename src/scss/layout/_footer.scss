@@ -70,6 +70,7 @@
             }
         }
     }
+
 .list__element--link {
     text-decoration: none;
     color:$colorWhite;
@@ -77,8 +78,8 @@
     padding:5px;
     &:hover {
         color:$colorBotonIcon;
+        }
     }
-}
 
 .fa-heart {
     color:$colorBotonIcon;
@@ -88,5 +89,5 @@
     &:hover {
         color:red;
         transform: rotate(720deg) scale(2);
+        }
     }
-}

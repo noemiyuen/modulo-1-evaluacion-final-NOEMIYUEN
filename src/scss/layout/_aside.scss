@@ -7,78 +7,78 @@
     @media all and (min-width:1200px){
         padding:65px 275px 60px;
         }
-&__title3 {
-    color:$colorInsomnia;
-    text-transform: capitalize;
-    @include t (rem(14),rem(30));
-    vertical-align: text-top;
-    @media all and (min-width:1200px){
-        @include t (rem(16),rem(30));
-        }
-    }
-&__article {
-    display:flex;
-    flex-direction: column;
-    gap:20px;
-    @media all and (min-width:768px){
-        gap:27px;
-        }
-    @media all and (min-width:1200px){
-        gap:32px;
-        }
-    &--title2 {
-        @include t (rem(24),rem(30));
-        font-family: $font-family-titles;
-        font-weight: 700;
+    &__title3 {
+        color:$colorInsomnia;
         text-transform: capitalize;
-        max-width: 20ch;
+        @include t (rem(14),rem(30));
+        vertical-align: text-top;
+        @media all and (min-width:1200px){
+            @include t (rem(16),rem(30));
+            }
+        }
+    &__article {
+        display:flex;
+        flex-direction: column;
+        gap:20px;
         @media all and (min-width:768px){
-            max-width: 100%;
-            @include t (rem(26),rem(45));
+            gap:27px;
             }
         @media all and (min-width:1200px){
-            font-size: rem(32);
+            gap:32px;
             }
-        }
-    &--text {
-        color:#4a4a4a;
-        @include t (rem(18),rem(30));
+        &--title2 {
+            @include t (rem(24),rem(30));
+            font-family: $font-family-titles;
+            font-weight: 700;
+            text-transform: capitalize;
+            max-width: 20ch;
+            @media all and (min-width:768px){
+                max-width: 100%;
+                @include t (rem(26),rem(45));
+                }
+            @media all and (min-width:1200px){
+                @include t (rem(32),rem(45));
+                }
+            }
+        &--text {
+            color:#4a4a4a;
+            @include t (rem(18),rem(30));
+            @media all and (min-width:768px){
+                @include t (rem(20),rem(30));
+                }
+            }
+        } 
+    &__button {
+        margin-top: 26px;
+        padding: 5px;
+        border: solid 2px $colorBotonIcon;
+        border-radius: 22.5px;
+        @include wh (76px,45px);
+        background-color:$colorWhite;
+        color:$colorBotonIcon;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: rem(20);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: width 2s, transform 1s;
+        transition-timing-function: ease-out;
+        &:hover {
+            background-color:$colorBotonIcon;
+            transform:rotate(360deg);
+            width:200px;
+            color:$colorWhite;
+            font-size: rem(30);
+            }
         @media all and (min-width:768px){
-            font-size: rem(20);
+            @include wh (91px,45px);
+            margin-top: 27px;
             }
-        }
-    } 
-&__button {
-    margin-top: 26px;
-    padding: 5px;
-    border: solid 2px $colorBotonIcon;
-    border-radius: 22.5px;
-    @include wh (76px,45px);
-    background-color:$colorWhite;
-    color:$colorBotonIcon;
-    font-weight: 500;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: rem(20);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: width 2s, transform 1s;
-    transition-timing-function: ease-out;
-    &:hover {
-       background-color:$colorBotonIcon;
-        transform:rotate(360deg);
-        width:200px;
-        color:$colorWhite;
-        font-size: rem(30);
-        }
-    @media all and (min-width:768px){
-        @include wh (91px,45px);
-        margin-top: 27px;
-        }
-    @media all and (min-width:1200px){
-        @include wh (160px,45px);
-        }
+        @media all and (min-width:1200px){
+            @include wh (160px,45px);
+            }
 
-    }  
-}
+        }  
+    }

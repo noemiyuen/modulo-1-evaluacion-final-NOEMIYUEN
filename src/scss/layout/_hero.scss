@@ -42,12 +42,12 @@
             @media all and (min-width:768px){
                 @include wh (15.1px,14px);
                 transform: translate(0, 0);
-            }
+                }
             @media all and (min-width:1200px){
                 width: 16px;
+                }
             }
         }
-    }
     &__title {
         font-family: $font-family-titles;
         font-weight: 700;
@@ -66,7 +66,7 @@
             @include t (rem(100),rem(132));
             margin-bottom: 0px;
             }
-    }
+        }
     &__text {
         @include t (rem(16),rem(19));
         margin-bottom: 35.2px;
@@ -80,36 +80,36 @@
             margin-bottom: 34px;
             max-width: 100%;
             }
-    }
+        }
    &__buttonScroll {
-    background-color:$colorWhite;
-    @include wh (37.9px,37px);
-    border-color: transparent;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-name: colorRange;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    padding:5px;
-    &:hover {
-        background-color:$colorFooterBackground;
-        }
-    @media all and (min-width:768px){
-        @include wh (42.5px,45px);
-        }
-    @media all and (min-width:1200px){
-        @include wh (45px,45px);
-        }
-    &--scrollImg {
-        @include wh (16.8px,9.6px);
+        background-color:$colorWhite;
+        @include wh (37.9px,37px);
+        border-color: transparent;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: colorRange;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        padding:5px;
+        &:hover {
+            background-color:$colorFooterBackground;
+            }
         @media all and (min-width:768px){
-            @include wh (18.9px,11.7px);
+            @include wh (42.5px,45px);
             }
         @media all and (min-width:1200px){
-            @include wh (20px,11.7px);
+            @include wh (45px,45px);
+            }
+        &--scrollImg {
+            @include wh (16.8px,9.6px);
+            @media all and (min-width:768px){
+                @include wh (18.9px,11.7px);
+                }
+            @media all and (min-width:1200px){
+                @include wh (20px,11.7px);
+                }
             }
         }
     }
-}
