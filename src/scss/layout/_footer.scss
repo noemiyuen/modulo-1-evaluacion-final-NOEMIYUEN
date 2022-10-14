@@ -17,9 +17,10 @@
         position:absolute;
         z-index: 1;
         top:-5%;
-        display: flex;
+        display:none;
+        /* display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
         padding:5px;
         animation:shakeY;
         animation-duration: 1s;
@@ -29,6 +30,9 @@
             }
         @media all and (min-width:768px){
             top: -10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             }
         &--arrowImg {
             height:24px;
@@ -60,6 +64,8 @@
         &--container {
             margin-top: 2px;
             text-align: center;
+            display:flex;
+            flex-direction: column;
             @include t (rem(14),rem(30));
             @media all and (min-width:768px){
                 order: -1; 
@@ -70,6 +76,18 @@
             }
         }
     }
+
+.wrap-copy {
+    @media all and (min-width:768px) {
+        order: 2;
+    }
+}
+.wrap-love {
+    @media all and (min-width:768px) {
+        order: -1;
+    }
+}
+
 
 .list__element--link {
     text-decoration: none;
